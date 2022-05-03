@@ -8,6 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.7</version>
+        <relativePath />
     </parent>
 
     <groupId>com.myteek</groupId>
@@ -23,6 +24,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <mysql.connector.java.version>8.0.29</mysql.connector.java.version>
         <mybatis.generate.version>1.4.1</mybatis.generate.version>
+        <project.current.version>2.0-SNAPSHOT</project.current.version>
     </properties>
 
     <dependencyManagement>
@@ -55,7 +57,7 @@
             <dependency>
                 <groupId>com.myteek</groupId>
                 <artifactId>myteek-mybatis</artifactId>
-                <version>${project.version}</version>
+                <version>${project.current.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
@@ -138,7 +140,7 @@
                         <dependency>
                             <groupId>com.myteek</groupId>
                             <artifactId>myteek-policy</artifactId>
-                            <version>${project.version}</version>
+                            <version>${project.current.version}</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -193,7 +195,7 @@
                         <dependency>
                             <groupId>com.myteek</groupId>
                             <artifactId>myteek-policy</artifactId>
-                            <version>${project.version}</version>
+                            <version>${project.current.version}</version>
                         </dependency>
                     </dependencies>
                     <configuration>
